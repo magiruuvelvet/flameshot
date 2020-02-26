@@ -21,7 +21,6 @@
 #include "circlecount/circlecounttool.h"
 #include "copy/copytool.h"
 #include "exit/exittool.h"
-#include "imgur/imguruploadertool.h"
 #include "launcher/applaunchertool.h"
 #include "line/linetool.h"
 #include "marker/markertool.h"
@@ -57,9 +56,6 @@ ToolFactory::CreateTool(CaptureToolButton::ButtonType t, QObject* parent)
       break;
     case CaptureToolButton::TYPE_EXIT:
       tool = new ExitTool(parent);
-      break;
-    case CaptureToolButton::TYPE_IMAGEUPLOADER:
-      tool = new ImgurUploaderTool(parent);
       break;
     case CaptureToolButton::TYPE_DRAWER:
       tool = new LineTool(parent);
@@ -106,7 +102,6 @@ ToolFactory::CreateTool(CaptureToolButton::ButtonType t, QObject* parent)
     case CaptureToolButton::TYPE_CIRCLECOUNT:
       tool = new CircleCountTool(parent);
       break;
-
     default:
       tool = nullptr;
       break;

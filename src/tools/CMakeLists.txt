@@ -6,12 +6,6 @@ target_sources(flameshot PRIVATE copy/copytool.h copy/copytool.cpp)
 target_sources(flameshot PRIVATE exit/exittool.h exit/exittool.cpp)
 target_sources(
   flameshot
-  PRIVATE imgur/imguruploader.h
-          imgur/imguruploadertool.h
-          imgur/imguruploader.cpp
-          imgur/imguruploadertool.cpp)
-target_sources(
-  flameshot
   PRIVATE launcher/applaunchertool.h
           launcher/applauncherwidget.h
           launcher/launcheritemdelegate.h

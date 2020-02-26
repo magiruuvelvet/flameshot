@@ -903,7 +903,7 @@ CaptureWidget::initShortcuts()
   new QShortcut(
     QKeySequence(Qt::CTRL + Qt::Key_S), this, SLOT(saveScreenshot()));
   new QShortcut(
-    QKeySequence(Qt::CTRL + Qt::Key_C), this, SLOT(copyScreenshot()));
+    QKeySequence(Qt::CTRL + Qt::Key_C), this, SLOT(saveScreenshot()));
   new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Z), this, SLOT(undo()));
   new QShortcut(
     QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_Z), this, SLOT(redo()));
@@ -916,8 +916,8 @@ CaptureWidget::initShortcuts()
     QKeySequence(Qt::SHIFT + Qt::Key_Down), this, SLOT(downResize()));
   new QShortcut(Qt::Key_Space, this, SLOT(togglePanel()));
   new QShortcut(Qt::Key_Escape, this, SLOT(deleteToolwidgetOrClose()));
-  new QShortcut(Qt::Key_Return, this, SLOT(copyScreenshot()));
-  new QShortcut(Qt::Key_Enter, this, SLOT(copyScreenshot()));
+  new QShortcut(Qt::Key_Return, this, SLOT(saveScreenshot()));
+  new QShortcut(Qt::Key_Enter, this, SLOT(saveScreenshot()));
 }
 
 void

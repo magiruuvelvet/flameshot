@@ -1,3 +1,5 @@
+Nothing to see here, just some opinionated patches to make this software usable for myself :)
+
 <div align="center">
   <p>
     <h1>

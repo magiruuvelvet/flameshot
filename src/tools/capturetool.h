@@ -30,7 +30,6 @@ enum class ToolType
   CIRCLECOUNT,
   COPY,
   EXIT,
-  IMGUR,
   LAUNCHER,
   LINE,
   MARKER,
