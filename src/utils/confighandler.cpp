@@ -54,7 +54,6 @@ ConfigHandler::getButtons()
             << CaptureToolButton::TYPE_UNDO << CaptureToolButton::TYPE_REDO
             << CaptureToolButton::TYPE_COPY << CaptureToolButton::TYPE_SAVE
             << CaptureToolButton::TYPE_EXIT
-            << CaptureToolButton::TYPE_IMAGEUPLOADER
             << CaptureToolButton::TYPE_OPEN_APP << CaptureToolButton::TYPE_PIN
             << CaptureToolButton::TYPE_TEXT
             << CaptureToolButton::TYPE_CIRCLECOUNT;
